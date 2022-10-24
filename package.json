@@ -1,0 +1,21 @@
+{
+  "name": "nodeserver",
+  "version": "1.0.0",
+  "description": "web-mito-server",
+  "main": "app.js",
+  "scripts": {
+    "online-start": "pm2 start bin/www --watch",
+    "dev-start": "nodemon bin/www --watch",
+    "stop": "pm2 delete all & pm2 stop all"
+  },
+  "author": "zhaojiale",
+  "license": "ISC",
+  "dependencies": {
+    "koa": "^2.13.4",
+    "koa-bodyparser": "^4.3.0",
+    "koa-router": "^12.0.0",
+    "mysql": "^2.18.1",
+    "nodemon": "^2.0.20",
+    "pm2": "^5.2.2"
+  }
+}
