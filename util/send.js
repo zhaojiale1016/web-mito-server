@@ -17,6 +17,7 @@ class errorMessage extends sendMessage {
     this.status = code;
   }
 }
+
 module.exports = {
   successMessage,
   errorMessage,
